@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html Lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>POST Form Data as JSON with JavaScript Fetch API</title>
+    <link rel="stylesheet" href="ContraseñaOlvidada.css">
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <!-- Reemplaza este src con la ruta a tu video -->
+            <source src="pruebafondoweb.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+    </div>
+    <center><img src="chicapassword.png" alt="Nuestra imagen corporativa" class="helpdeskgirl"
+            style="width:200px;height:150px;"></center>
+    <center>
+    <center>
+        <h1>Sistema de Mesa de Ayuda</h1>
+        <h2>!Contraseña Olvidada!</h2>
+    </center>
+
+    <center>
+        <div class="form-wrap">
+        <form class="form" novalidate>
+            <div id="paso1-email">
+                <p>Ingresa tu correo para buscar tu cuenta.</p>
+                <table class="form-table">
+                    <tr>
+                        <td><label for="contacto" class="form-label">Email</label></td>
+                        <td><input id="contacto" class="email txt" name="contacto" type="email" placeholder="Correo electrónico"
+                                required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="form-actions">
+                            <button type="button" id="btn-buscar">Buscar Cuenta</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="text-newpass"  id="paso2-password" style="display: none;">
+                <p>Cuenta encontrada.</p>
+                <p>ingresar  nueva contraseña.</p>
+                <table class="form-table">
+                    <tr>
+                        <td><label for="password" class="color-password">Nueva Contraseña</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="display:flex;align-items:center;gap:8px;">
+                                <input id="password" class="txt" name="password" type="password" placeholder="Contraseña"
+                                    required>
+                                <label style="display:inline-flex;align-items:center;gap:6px;cursor:pointer;font-size:14px;">
+                                    <input id="showPassword1" type="checkbox" aria-label="Mostrar contraseña">
+                                    <span class="color-password"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="repeat-password" class="color-password">Repetir Contraseña</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="display:flex;align-items:center;gap:8px;">
+                                <input id="repeat-password" class="txt" name="repeat-password" type="password"
+                                    placeholder="Contraseña" required>
+                                <label style="display:inline-flex;align-items:center;gap:6px;cursor:pointer;font-size:14px;">
+                                    <input id="showPassword2" type="checkbox" aria-label="Mostrar contraseña">
+                                    <span class="color-password"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="form-actions">
+                            <button type="submit" id="btn-cambiar">Cambiar Contraseña</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <table class="form-table">
+                <tr>
+                    <td colspan="2" style="text-align: center;"><span id="resultado"></span></td>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </center>
+    
+    <div id="app"></div>
+    <ul id="listado"></ul>
+    <script src="ContraseñaOlvidada.js" type="module"></script>
+</body>

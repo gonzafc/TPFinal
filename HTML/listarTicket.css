@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+Body {
+    font-family: 'oswald', monospace;
+    
+}
+
+/* tabla con el login y listar ticket */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #040404;
+    border-radius: 15px;
+}
+
+/* Display list items side by side */
+/* Mostrar elementos de la lista uno al lado del otro */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 25px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+/* Agrega un símbolo de barra (/) antes/detrás de cada elemento de la lista */
+ul.breadcrumb li+li:before,
+li {
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+/*Agrega un color a todos los enlaces dentro de la lista*/
+ul.breadcrumb li a {
+    color: #ffffff;
+    text-decoration: line;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+/* Add a color on mouse-over */
+/*Agrega un color al pasar el mouse*/
+ul.breadcrumb li a:hover {
+    color: #46a2f2;
+    text-decoration: underline;
+}
+
+/* cuadro del formulario de tickets */
+.form {
+    width: auto;
+    max-width: 50%;
+    min-width: 320px;
+    border-radius: 12px;
+    border: 3px solid #000;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: rgb(169, 169, 169);
+    box-shadow: 0 0 60px #000000;
+    margin: 16px auto;
+}
+
+/* --- Centrado de la información del usuario --- */
+.info-usuario {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.info-usuario table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.info-usuario td {
+    padding: 8px 16px;
+    text-align: center;
+}
+
+.info-usuario td:first-child {
+    text-align: right;
+    font-weight: bold;
+}
+.info-usuario td:last-child {
+    text-align: center;
+}
