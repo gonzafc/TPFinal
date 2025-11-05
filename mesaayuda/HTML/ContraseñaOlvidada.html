@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Restablecer Contraseña</title>
+    <link rel="stylesheet" href="ContraseñaOlvidada.css">
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="pruebafondoweb.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+    </div>
+
+    <center><img src="chicapassword.png" alt="HelpDesk" class="helpdeskgirl" style="width:200px;height:150px;"></center>
+    <center>
+        <h1>Sistema de Mesa de Ayuda</h1>
+        <h2>¡Restablecer Contraseña!</h2>
+    </center>
+    <center>
+        <div class="form-wrap">
+            <form class="form" id="resetForm" novalidate>
+                <table class="form-table">
+                    <tr>
+                        <td><label for="contacto" class="form-label">Email</label></td>
+                        <td><input id="contacto" class="email txt" name="contacto" type="email" placeholder="Correo electrónico" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="password" class="form-label">Nueva Contraseña</label></td>
+                        <td>
+                            <div style="display:flex;align-items:center;gap:8px;">
+                                <input id="password" class="txt" name="password" type="password" placeholder="Nueva contraseña" required>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="repeat-password" class="form-label">Repetir Contraseña</label></td>
+                        <td>
+                            <div style="display:flex;align-items:center;gap:8px;">
+                                <input id="repeat-password" class="txt" name="repeat-password" type="password" placeholder="Repetir contraseña" required>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="form-actions">
+                            <button type="submit" id="btn-cambiar">Cambiar Contraseña</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align:center;">
+                            <span id="resultado"></span>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+    <script src="ContraseñaOlvidada.js" type="module"></script>
+</body>
+</html>

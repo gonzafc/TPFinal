@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "mesaayuda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "description": "Implementación (parcial) de arquitectura, componente y maquetado para \r aplicación mockup de mesa de ayuda.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lu7did/mesaayuda.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lu7did/mesaayuda/issues"
+  },
+  "homepage": "https://github.com/lu7did/mesaayuda#readme"
+}
